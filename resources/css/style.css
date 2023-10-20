@@ -1,0 +1,142 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-position-y: 10%;
+    background-size: cover;
+    font-family: "Nunito Sans";
+    color: #ece7ec;
+}
+a {
+    text-decoration: none;
+    color: azure;
+
+}
+header {
+    border-bottom: 5px solid rgba(110, 60, 202, 1);
+    text-align: center;
+    padding-top: 10px;
+    margin: -20px -10px 5px -10px;
+    letter-spacing: 5px;
+    /* text-transform: uppercase; */
+    font-weight: 900;
+    text-shadow: 0 0 10px #cf07cf;
+    box-shadow: 2px 5px 100px #5c035c; 
+    position: relative;
+}
+
+.push {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.push h3 {
+    font-size: 18px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center;
+    border: 2px solid rgba(110, 60, 202, 1);
+    border-radius: 50%;
+    color: #fff; /* Цвет текста */
+    text-shadow: 0 0 10px #ff00ff;
+    box-shadow: 0px 0px 30px #ebe8eb; 
+    background-color: rgba(157, 60, 202, 0.2);
+    letter-spacing: 1px;
+    font-size: 100;
+    
+}
+.push h3:hover {
+    background-color: rgba(123, 64, 151, 0.5);
+    transition: background-color 1s;
+    transform: scale(0.95);
+}
+.push h3:active {
+     transform: scale(0.9);  
+     background-color: #5c035c; 
+     transition: background-color .1s; 
+
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Вторая страница Стилизация текста */
+.text-style-nav ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    margin-top: 1px;
+    padding: 1px 1px;
+    
+}
+li {
+    padding: 0px 5px;
+    font-size: 15px;
+    margin: 1px 10px;
+    border: 2px solid rgba(110, 60, 202, 1);
+    border-radius: 15px;
+    background-color: rgba(157, 60, 202, 0.2);
+    box-shadow: 0px 0px 13px #ebe8eb; 
+    text-shadow: 0 0 10px #ff00ff;
+    position: relative;
+}
+
+.text-style-nav li+li::before {
+    content: ">";
+    position: absolute;
+    left: -15px;
+}
+
+/* БЛОК ЦВЕТА */
+
+
+.colors {
+    color: #bbb6bb;
+    background-color: rgba(157, 60, 202, 0.2);
+    border: 2px solid rgba(110, 60, 202, 1);
+    border-radius: 15px;    
+}
+
+.text h3 {
+    position:relative;
+    text-align: center;
+    margin: 40px auto;
+}
+.block {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding: 10px;
+}
+.block p {
+    margin: 10px auto;
+    font-weight: 400;
+}
+.block div {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 180px;
+}
+.block-orange {
+    background-color: orange;
+    color: red;
+}
+.block-blue {
+    background-color: hsla(240, 100%, 50%, 0.5);
+    color: hsl(60, 100%, 50%);
+}
+.block-green {
+    background-color: #138b03;
+    color: #000000;
+}
+.block-brown {
+    background-color: #8f2f11;
+    color: rgba(229, 55, 165, 0.5);
+} 
+.block-violet {
+    background-color: rgba(182, 10, 255, 0.7);
+    color: rgb(255, 255, 255);
+} 
