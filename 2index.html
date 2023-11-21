@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200;1,6..12,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=El+Messiri&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -15,17 +18,17 @@
     </header>
     <nav class="text-style-nav">
         <ul>
-            <li><a href="./index.html" target="_blank">Home</a></li>
+            <li class="home"><a href="./index.html" target="_blank">Home</a></li>
             <li><a href="#">Стилизация текста</a></li>
         </ul>
     </nav>
     <main>
         <section class="text">
             <h3>Цвета и варианты их включения</h3>
-            <article class="colors">
+            <article class="">
                 <p>В CSS можно задавать как цвета самого текста так и заднего фона. Цвет текста задается с помощью свойства "color". Цвет фона командой "background-color". Можно задавать прозрачность с помощью rgba и hsla. </p>
                 <p>Пример:</p>
-                <div class="block">
+                <div class="block-color">
                     <div class="block-orange">
                         <p>color:red</p>
                         <p>background-color:orange</p>
@@ -48,6 +51,102 @@
                     </div>
                 </div>
             </article>
+            <h3>Шрифты и вид текста</h3>
+            <article class="">
+                <p>Шрифт текста можно задавать как стандартный, уже включенный в редактор, так и интегрированный из Google Fonts, и локально сохраненные. </p>
+                <p>Пример стандартных шрифтов:</p>
+                <div class="block-fonts">
+                    <div class="fonts-arial">
+                        <p>"Этот текст показывает шрифт Arial"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-verdana">
+                        <p>"Этот текст показывает шрифт Verdana"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-georgia">
+                        <p>"Этот текст показывает шрифт Georgia"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-cambria">
+                        <p>"Этот текст показывает шрифт Cambria"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-trebuchet">
+                        <p>"Этот текст показывает шрифт Trebuchet MS"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                </div>
+                <p>Пример интегрированных шрифтов:</p>
+                <div class="block-fonts">
+                    <div class="fonts-Amatic-SC">
+                        <p>"Этот текст показывает шрифт Amatic SC"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-Caveat">
+                        <p>"Этот текст показывает шрифт Caveat"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-El-Messiri">
+                        <p>"Этот текст показывает шрифт El Messiri"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-Lobster">
+                        <p>"Этот текст показывает шрифт Lobster"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                    <div class="fonts-Pacifico">
+                        <p>"Этот текст показывает шрифт Pacifico"</p>
+                        <p id="w900">font-weight: bold;</p>
+                        <p id="w400">font-weight: normal;</p>
+                        <p id="w100">font-weight: lighter;</p>
+                    </div>
+                </div>
+            </article>
+            <h3>Подзаголовки и оформление</h3>
+            <article class="head">
+                <p>Подзаголовки как правило могут создаваться тегами h1..h6 с уже включенными настройками шрифта, которые, при желании можно изменить с помощью CSS. Но не все шрифты поддерживают те или иные настройки (толщину текста, курсив). </p>
+                <p>Пример подзаголовков:</p>
+                <div class="block-head">
+                    <div class="head-h1">
+                        <h2>"Это заголовок h2"</h2>
+                        <h2 id="italic">Текст курсивом;</h2>
+                        <h2 id="underline">Подчеркнутый текст;</h2>
+                        <h2 id="line-through">Перечеркнутый текст;</h2>
+                    </div>
+                    <div class="head-h2">
+                        <h4>"Это заголовок h4"</h4>
+                        <h4 id="italic">Текст курсивом</h4>
+                        <h4 id="underline">Подчеркнутый текст</h4>
+                        <h4 id="line-through">Перечеркнутый текст</h4>
+                    </div>
+                    <div class="head-h3">
+                        <h6>"Это заголовок h6"</h6>
+                        <h6 id="italic">Текст курсивом</h6>
+                        <h6 id="underline">Подчеркнутый текст</h6>
+                        <h6 id="line-through">Перечеркнутый текст</h6>
+                    </div>
+                </div> 
+            </article>
+           
         </section>
     </main>
     
